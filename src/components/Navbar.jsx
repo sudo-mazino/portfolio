@@ -3,9 +3,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center mb-8 backdrop:blur-sm rounded-lg p-4 navbar bg-base-200 shadow-sm">
-        <div className='flex flex-col gap-1'>
+        <div className='flex flex-col gap-1 ml-3'>
             <h1 className='text-2xl font-bold'>Name</h1>
-            <p className='text-sm'>Full stack engineer</p>
+            <p className='text-[13px] '>Full stack engineer</p>
         </div>
         <div className='flex items-center gap-2'>
             <label className="swap swap-rotate">
