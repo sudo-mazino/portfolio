@@ -1,2 +1,14 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+   themes: bumblebee --default, halloween --prefersdark;
+}
+@plugin "daisyui/theme" {
+  name: "halloween";
+  prefersdark: true;
+  --color-info:oklch(74% 0.16 232.661);
+}
+@plugin "daisyui/theme" {
+  name: "bumblebee";
+  default:true;
+  --color-primary:blue;
+}

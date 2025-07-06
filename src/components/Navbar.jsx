@@ -3,27 +3,27 @@ import { Mail,Github,Linkedin,Phone } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center mb-8 backdrop:blur-sm rounded-lg navbar border-2 border-base-100 p-2 bg-base-200 shadow-sm">
+    <div className="flex justify-between items-center mb-2 backdrop:blur-sm rounded-lg navbar border-1 border-base-300 p-2 bg-base-100 shadow-sm">
         <div className='flex flex-col gap-1 ml-3'>
             <h1 className='text-2xl font-bold'>Name</h1>
             <p className='text-[13px] '>Full stack engineer</p>
         </div>
         <div>
             <ul className="menu menu-horizontal px-1">
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Linkedin /></a></li>
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Github /></a></li>
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Mail /></a></li>
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Phone /></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Linkedin className='text-secondary'/></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Github className='text-secondary'/></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Mail className='text-secondary'/></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href=""><Phone className='text-secondary'/></a></li>
             </ul>
         </div>     
         <div className='flex items-center gap-2'>
             <label className="swap swap-rotate">
                 {/* this hidden checkbox controls the state */}
-                <input type="checkbox" className="theme-controller" value="light" />
+                <input type="checkbox" className="theme-controller" value="bumblebee" />
 
                 {/* sun icon */}
                 <svg
-                    className="swap-off h-6 w-6 fill-current"
+                    className="swap-off h-6 w-6 fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24">
                     <path
@@ -32,7 +32,7 @@ const Navbar = () => {
 
                 {/* moon icon */}
                 <svg
-                    className="swap-on h-6 w-6 fill-current"
+                    className="swap-on h-6 w-6 fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24">
                     <path
@@ -41,7 +41,7 @@ const Navbar = () => {
             </label>
             <div className="flex-none">
                 <button className="btn btn-square btn-ghost" onClick={() => window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0", "_blank")}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text h-5 w-5"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text h-5 w-5 text-info"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
                 </button>
             </div>
         </div>
