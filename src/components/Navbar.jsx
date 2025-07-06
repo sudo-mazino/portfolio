@@ -2,11 +2,12 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center mb-8 backdrop:blur-sm rounded-lg navbar border-2 border-base-100 p-4 bg-base-300 shadow-sm">
+    <div className="flex justify-between items-center mb-8 backdrop:blur-sm rounded-lg navbar border-2 border-base-100 p-4 bg-base-200 shadow-sm">
         <div className='flex flex-col gap-1 ml-3'>
             <h1 className='text-2xl font-bold'>Name</h1>
             <p className='text-[13px] '>Full stack engineer</p>
         </div>
+        
         <div className='flex items-center gap-2'>
             <label className="swap swap-rotate">
                 {/* this hidden checkbox controls the state */}
