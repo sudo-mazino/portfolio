@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
 import Achievement from './components/Achievements'
+import Projects from './components/Projects'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         {/* <section>Work Experience</section> */}
         <section><Skills/></section>
         <section> <Achievement/> </section>
+        <section> <Projects/> </section>
       </div>
     </div>
   )

@@ -12,7 +12,7 @@ const List = ({text}) => {
 
 const Achievements = () => {
   return (
-    <div className="flex flex-col gap-1 mb-4 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm" >
+    <div className="flex flex-col gap-1 mb-2 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm" >
         <h2 className='text-base ml-3 font-bold'>Achievement</h2>
         <div className='flex flex-col ' >
             <List text="won something"/>
