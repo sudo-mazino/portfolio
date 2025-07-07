@@ -6,9 +6,11 @@
   name: "halloween";
   prefersdark: true;
   --color-info:oklch(74% 0.16 232.661);
+  --color-neutral: oklch(26% 0.007 34.298);
 }
 @plugin "daisyui/theme" {
   name: "bumblebee";
   default:true;
   --color-primary:blue;
+  --color-neutral: oklch(90% 0 0);
 }

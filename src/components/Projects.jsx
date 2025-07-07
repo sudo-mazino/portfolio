@@ -1,37 +1,52 @@
 import React from 'react'
+import { Skill } from './Skills';
 
-const Project = () => {
+const Project = ({title,description, text= [] }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
-        <figure>
+    <div className="card group relative bg-base-100 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
+        <figure className='aspect-video relative overflow-hidden rounded-lg transition-all duration-300 group-hover:scale-102' >
             <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes" />
+            alt="Shoes"/>
         </figure>
         <div className="card-body">
-            <h2 className="card-title">
-            Card Title
-            <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-            <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <h3 className="card-title text-[15px] font-semibold ">{title}</h3>
+            <p>{description}</p>
+            <div className="flex flex-start">
+            {text.map((item,index) => (
+              <Skill key={index} text={item} />
+            ))}
             </div>
-        </div>
+            <div className='card-actions flex justify-start text-[12px] hover:text-info-content ' >
+              <a className="link link-hover ml-1">Github</a>
+              <a className="link link-hover ">View project</a>
+            </div> 
+        </div> 
     </div>
   )
 }
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-1 mb-4">
-        <h2 className='text-base ml-5 font-bold'>Projects</h2>
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4' >
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+    <div className="flex flex-col gap-1 mb-4 ">
+        <h2 className='text-base ml-5 mb-2 mt-2 font-bold'>Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center" >
+            <Project 
+              title="project1" 
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
+              text={["html", "css", "git"]} />
+            <Project 
+              title="project2" 
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
+              text={["react", "express", "node"]}/>
+            <Project 
+              title="project3" 
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
+              text={["kk", "dsb", "gisdbt"]}/>
+            <Project 
+              title="project4" 
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
+              text={["sbd", "spd", "enn"]}/>
         </div>
     </div>
   )

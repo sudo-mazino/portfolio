@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Skill = ({text}) => {
+export const Skill = ({text}) => {
   return (
-    <div className='badge badge-info m-1 text-accent-content font-semibold transition-all duration-300 ease-in-out hover:badge-outline hover:scale-102 hover:-translate-y-[2px] '>{text}</div>
+    <div className='badge badge-info rounded-lg mt-1 mb-1 mr-2 text-accent-content font-semibold transition-all duration-300 ease-in-out hover:badge-outline hover:scale-102 hover:-translate-y-[2px] '>{text}</div>
   )
 }
 
