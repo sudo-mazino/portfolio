@@ -1,6 +1,7 @@
 import React from 'react'
 import { Skill } from './Skills';
 import Stock1 from '../assets/stock1.jpg';
+import { CodeXml } from 'lucide-react';
 
 const Project = ({title,description, text= [] }) => {
   return (
@@ -20,7 +21,7 @@ const Project = ({title,description, text= [] }) => {
             </div>
             <div className='card-actions flex justify-start text-[12px] hover:text-info-content ' >
               <a className="link link-hover ml-1">Github</a>
-              <a className="link link-hover ">View project</a>
+              <a className="link  ">View project</a>
             </div> 
         </div> 
     </div>
@@ -30,7 +31,7 @@ const Project = ({title,description, text= [] }) => {
 const Projects = () => {
   return (
     <div className="flex flex-col gap-1 mb-4 ">
-        <h2 className='text-base ml-5 mb-2 mt-2 font-bold'>Projects</h2>
+        <h2 className='flex flex-row gap-2 text-base ml-5 mb-2 mt-2 font-bold'><CodeXml /> Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center" >
             <Project 
               title="project1" 
