@@ -4,12 +4,12 @@ import Stock1 from '../assets/stock1.jpg';
 
 const Project = ({title,description, text= [] }) => {
   return (
-    <div className="card group relative bg-base-100 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
-        <figure className='aspect-video relative overflow-hidden rounded-lg transition-all duration-300 group-hover:scale-102' >
-            <img
-            src={Stock1}
-            alt="project"/>
-        </figure>
+    <div className="card group relative bg-base-100 p-2 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
+        <div className='aspect-video relative overflow-hidden rounded-lg' >
+          <figure className='transition-all duration-300 group-hover:scale-103' >
+            <img src={Stock1} alt="project"/>
+          </figure>
+        </div>
         <div className="card-body">
             <h3 className="card-title text-[15px] font-semibold ">{title}</h3>
             <p>{description}</p>

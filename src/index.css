@@ -5,6 +5,9 @@
 @plugin "daisyui/theme" {
   name: "halloween";
   prefersdark: true;
+  --color-base-100: oklch(0.2108 0.0044 285.82);
+  --color-base-200: oklch(0.1408 0.0044 285.82);
+  --color-base-300: oklch(0 0.0044 285.82);
   --color-info:oklch(74% 0.16 232.661);
   --color-neutral: oklch(26% 0.007 34.298);
 }
