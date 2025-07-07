@@ -17,3 +17,6 @@
   --color-primary:blue;
   --color-neutral: oklch(90% 0 0);
 }
+body{
+  font-family: 'IBM Plex', monospace;
+}
