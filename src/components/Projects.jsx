@@ -1,13 +1,14 @@
 import React from 'react'
 import { Skill } from './Skills';
+import Stock1 from '../assets/stock1.jpg';
 
 const Project = ({title,description, text= [] }) => {
   return (
     <div className="card group relative bg-base-100 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
         <figure className='aspect-video relative overflow-hidden rounded-lg transition-all duration-300 group-hover:scale-102' >
             <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"/>
+            src={Stock1}
+            alt="project"/>
         </figure>
         <div className="card-body">
             <h3 className="card-title text-[15px] font-semibold ">{title}</h3>

@@ -8,7 +8,7 @@ export const Skill = ({text}) => {
 
 const Skills = () => {
   return (
-    <div className='flex flex-col gap-2 mb-2 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
+    <div className='flex flex-col gap-2 mb-4 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
       <h2 className='text-base ml-3 font-bold'>Skills</h2>
       <div className='flex flex-wrap ml-1.5'>
         <Skill text="JavaScript" />

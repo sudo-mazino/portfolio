@@ -3,7 +3,7 @@ import { Mail,Github,Linkedin,Phone } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center mb-2 backdrop:blur-sm rounded-lg navbar border-1 border-base-300 p-2 bg-base-100 shadow-sm">
+    <div className="flex justify-between items-center mb-4 backdrop:blur-sm rounded-lg navbar border-1 border-base-300 p-2 bg-base-100 shadow-sm">
         <div className='flex flex-col gap-1 ml-3'>
             <h1 className='text-2xl font-bold'>Name</h1>
             <p className='text-[13px] '>Full stack engineer</p>
