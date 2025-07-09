@@ -3,7 +3,7 @@ import { Skill } from './Skills';
 import Stock1 from '../assets/stock1.jpg';
 import { CodeXml } from 'lucide-react';
 
-const Project = ({title,description, text= [] }) => {
+const Project = ({title,description, text= [],github,projectl }) => {
   return (
     <div className="card group relative bg-base-100 p-2 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
         <div className='aspect-video relative overflow-hidden rounded-lg' >
@@ -15,13 +15,17 @@ const Project = ({title,description, text= [] }) => {
             <h3 className="card-title text-[15px] font-semibold ">{title}</h3>
             <p>{description}</p>
             <div className="flex flex-start">
-            {text.map((item,index) => (
-              <Skill key={index} text={item} />
-            ))}
+              {text.map((item,index) => (
+                <Skill key={index} text={item} />
+              ))}
             </div>
-            <div className='card-actions flex justify-start text-[12px] hover:text-info-content ' >
-              <a className="link link-hover ml-1">Github</a>
-              <a className="link  ">View project</a>
+            <div className='card-actions flex justify-start text-[12px] '>
+              <a className="group/link" href={github}>
+                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-1000 group-hover/link:scale-104 group-hover/link:bg-secondary group-hover/link:text-secondary-content '>Github</div>
+              </a>
+              <a className="group/pro" href={projectl}>
+                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-300 group-hover/pro:scale-104 group-hover/pro:bg-secondary group-hover/pro:text-secondary-content '>View project</div>
+              </a>
             </div> 
         </div> 
     </div>
@@ -36,19 +40,27 @@ const Projects = () => {
             <Project 
               title="project1" 
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
-              text={["html", "css", "git"]} />
+              text={["html", "css", "git"]}
+              github="https://github.com/Kuru-kuru-society"
+              projectl=""/>
             <Project 
               title="project2" 
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
-              text={["react", "express", "node"]}/>
+              text={["react", "express", "node"]}
+              github="https://github.com/Kuru-kuru-society"
+              projectl=""/>
             <Project 
               title="project3" 
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
-              text={["kk", "dsb", "gisdbt"]}/>
+              text={["kk", "dsb", "gisdbt"]}
+              github="https://github.com/Kuru-kuru-society"
+              projectl=""/>
             <Project 
               title="project4" 
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit illum perferendis blanditiis facilis! Harum, veritatis?" 
-              text={["sbd", "spd", "enn"]}/>
+              text={["sbd", "spd", "enn"]}
+              github="https://github.com/Kuru-kuru-society"
+              projectl=""/>
         </div>
     </div>
   )
