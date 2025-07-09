@@ -21,7 +21,7 @@ const Project = ({title,description, text= [],github,projectl }) => {
             </div>
             <div className='card-actions flex justify-start text-[12px] '>
               <a className="group/link" href={github}>
-                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-1000 group-hover/link:scale-104 group-hover/link:bg-secondary group-hover/link:text-secondary-content '>Github</div>
+                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-300 group-hover/link:scale-104 group-hover/link:bg-secondary group-hover/link:text-secondary-content '>Github</div>
               </a>
               <a className="group/pro" href={projectl}>
                 <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-300 group-hover/pro:scale-104 group-hover/pro:bg-secondary group-hover/pro:text-secondary-content '>View project</div>
