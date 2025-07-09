@@ -3,8 +3,9 @@ import './index.css'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
-import Achievement from './components/Achievements'
+import Publications from './components/Publications'
 import Projects from './components/Projects'
+import Achievements from './components/Achievements'
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
         <section><About/></section>
         {/* <section>Work Experience</section> */}
         <section><Skills/></section>
-        <section> <Achievement/> </section>
+        <section> <Achievements /> </section>
+        <section> <Publications/> </section>
         <section> <Projects/> </section>
       </div>
     </div>

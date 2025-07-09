@@ -1,4 +1,4 @@
-import { Newspaper } from 'lucide-react'
+import { Award } from 'lucide-react'
 import React from 'react'
 
 const List = ({text}) => {
@@ -13,11 +13,14 @@ const List = ({text}) => {
 
 const Achievements = () => {
   return (
-    <div className="flex flex-col gap-1 mb-2 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm">
-      <h2 className='flex flex-row gap-2 text-base ml-3 font-bold'><Newspaper />Publications</h2>
-      <div className='flex flex-col'>
-        <List text='Co-author of the research paper "Attention-Driven Modelling of Pose for Sign Language Recognition" — accepted and in process for publication at IEEE ICOCIT 2024.' />
-      </div>
+    <div className="flex flex-col gap-1 mb-4 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm" >
+        <h2 className='flex flex-row gap-2 text-base ml-3 font-bold'><Award />Achievement</h2>
+        <div className='flex flex-col ' >
+            <List text="HacktoberFest Contributer"/>
+            <List text="GsSoc Campus Ambassador 2025"/>
+            <List text="Open Source Contributor"/>
+            <List text="IEEE ICOCIT 2025 Research Paper Co-Author"/>
+        </div>
     </div>
   )
 }

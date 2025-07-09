@@ -10,8 +10,8 @@ const Navbar = () => {
         </div>
         <div>
             <ul className="menu menu-horizontal px-1">
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="https://www.linkedin.com/in/anshsharma-ln/"><Linkedin className='text-secondary'/></a></li>
-                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="https://github.com/Ultimecia1463"><Github className='text-secondary'/></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="https://www.linkedin.com/in/anshsharma-ln/"  target="_blank" rel="noopener noreferrer" ><Linkedin className='text-secondary'/></a></li>
+                <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="https://github.com/Ultimecia1463"  target="_blank" rel="noopener noreferrer" ><Github className='text-secondary'/></a></li>
                 <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="mailto:anshsharma5565@gmail.com"><Mail className='text-secondary'/></a></li>
                 <li className='hover:scale-115 transition-transform duration-300 ease-in-out'><a href="tel:+917987376083"><Phone className='text-secondary'/></a></li>
             </ul>
