@@ -21,7 +21,16 @@ const Skills = () => {
         <Skill text="CSS" />
         <Skill text="Tailwind CSS" />
         <Skill text="Git" />
-        <Skill text="REST APIs" />
+        <Skill text="Java" />
+        <Skill text="C++" />
+        <Skill text="Python" />
+        <Skill text="Linux" />
+        <Skill text="Maven" />
+        <Skill text="JUnit" />
+        <Skill text="JSON" />
+        <Skill text="Docker" />
+        <Skill text="CMake" />
+
       </div>
     </div>
   )
