@@ -9,7 +9,7 @@ export const Skill = ({text}) => {
 
 const Skills = () => {
   return (
-    <div className='flex flex-col gap-2 mb-4 backdrop-blur-[1px] rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
+    <div className='flex flex-col gap-2 mb-4 backdrop-blur-md rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
       <h2 className='flex items-center gap-2 text-base ml-3 font-bold text-[24px] bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'><Wrench />Skills</h2>
       <div className='flex flex-wrap ml-1.5'>
         <Skill text="JavaScript" />

@@ -15,7 +15,7 @@ const App = () => {
       {/* Liquid background */}
       <div className="absolute inset-0 z-0">
         <LiquidEther
-          colors={[ '#ff5f1f', '#2323ff', '#a800a8' ]}
+          colors={[ '#ff5f1f', '#8A9Cff', '#a800a2' ]}
           mouseForce={40}
           cursorSize={100}
           isViscous
@@ -30,7 +30,7 @@ const App = () => {
           takeoverDuration={0.1}
           autoResumeDelay={5}
           autoRampDuration={0.6}
-          color0="#2323ff"
+          color0="#0028ff"
           color1="#ff5f1f"
           color2="#a800a8"
         />

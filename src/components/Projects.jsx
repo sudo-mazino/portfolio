@@ -13,7 +13,7 @@ const Project = ({ title, description, text = [], github, projectl, img }) => {
       rounded-xl
       border border-base-300/40
       bg-base-100/60
-      backdrop-blur-[2px]
+      backdrop-blur-md
       shadow-sm
       transition-all duration-300
       hover:bg-base-100/80

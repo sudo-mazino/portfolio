@@ -3,7 +3,7 @@ import { Mail,Github,Linkedin,Phone, FileUser } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-3 mb-4 backdrop-blur-[1px] rounded-lg navbar border border-base-300 p-3 bg-base-100 shadow-sm" >
+    <div className="flex flex-wrap md:flex-nowrap justify-between items-center gap-3 mb-4 backdrop-blur-md rounded-lg navbar border border-base-300 p-3 bg-base-100 shadow-sm" >
         <div className='flex flex-col gap-1 ml-1 md:ml-3 w-full md:w-auto'>
             <p className='text-[24px] md:text-[25px] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white '>Full Stack Developer | Systems Engineer | Machine Learning Enthusiast</p>
         </div>
