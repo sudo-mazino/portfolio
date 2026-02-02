@@ -5,7 +5,7 @@ const List = ({text}) => {
   return (
     <div className='flex items-start' >
         <div className='min-w-[8px] h-[8px] rounded-full bg-base-content/30 m-2 ml-3'></div>
-        <p className='text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'  style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>{text}</p>
+        <p className='text-[18px] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'>{text}</p>
     </div>
   )
 }

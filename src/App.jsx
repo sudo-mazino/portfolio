@@ -41,7 +41,7 @@ const App = () => {
       className="
         text-white
         text-[120px]
-        md:text-[320px]
+        md:text-[290px]
         tracking-wide
         select-none
         mix-blend-difference
@@ -56,8 +56,10 @@ const App = () => {
 
       {/* Actual content */}
       <div className="relative z-10 h-screen overflow-y-auto no-scrollbar lg:pl-[250px] lg:pr-[250px]">
+        
         <div className="container mx-auto px-4 py-8">
           <nav><Navbar /></nav>
+          <div className='h-210'></div>
           <section><About /></section>
           <section><Skills /></section>
           <section><Achievements /></section>
