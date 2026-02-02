@@ -6,39 +6,98 @@ import jhttp from '../assets/jhttp.png';
 import jcnn from '../assets/jcnn.png';
 import esp from '../assets/esp.png';
 import { CodeXml } from 'lucide-react';
-const Project = ({title,description, text= [],github,projectl,img }) => {
+const Project = ({ title, description, text = [], github, projectl, img }) => {
   return (
-    <div className="card group relative bg-base-100 p-2 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:bg-neutral">
-        <div className='aspect-video relative overflow-hidden rounded-lg' >
-          <figure className='transition-all duration-300 group-hover:scale-103' >
-            <img src={img} alt="project"/>
-          </figure>
+    <div className="
+      group relative
+      rounded-xl
+      border border-base-300/40
+      bg-base-100/60
+      backdrop-blur-[2px]
+      shadow-sm
+      transition-all duration-300
+      hover:bg-base-100/80
+      hover:shadow-md
+    ">
+      
+      {/* Image */}
+      <div className="aspect-video overflow-hidden rounded-t-xl">
+        <img
+          src={img}
+          alt={title}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-4 space-y-3">
+        
+        {/* Title */}
+        <h3 className="text-lg text-white drop-shadow-sm text-[24px] bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-semibold">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-[16px] text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-semibold">
+          {description}
+        </p>
+
+        {/* Tech stack */}
+        <div className="flex flex-wrap gap-2 pt-1">
+          {text.map((item, index) => (
+            <Skill key={index} text={item} />
+          ))}
         </div>
-        <div className="card-body">
-            <h3 className="card-title text-[15px] font-semibold ">{title}</h3>
-            <p>{description}</p>
-            <div className="flex flex-start">
-              {text.map((item,index) => (
-                <Skill key={index} text={item} />
-              ))}
-            </div>
-            <div className='card-actions flex justify-start text-[12px] '>
-              <a className="group/link" href={github} target="_blank" rel="noopener noreferrer" >
-                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-300 group-hover/link:scale-104 group-hover/link:bg-secondary group-hover/link:text-secondary-content '>Github</div>
-              </a>
-              <a className="group/pro" href={projectl} target="_blank" rel="noopener noreferrer" >
-                <div className='bg-base-100 rounded-full p-0.5 pl-2 pr-2 transition-all duration-300 group-hover/pro:scale-104 group-hover/pro:bg-secondary group-hover/pro:text-secondary-content '>View project</div>
-              </a>
-            </div> 
-        </div> 
+
+        {/* Actions */}
+        <div className="flex gap-3 pt-1">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              text-xs
+              px-3 py-1
+              rounded-full
+              border border-base-300/50
+            text-white/90
+              transition-all
+              hover:bg-secondary
+              hover:text-secondary-content
+              
+            "
+          >
+            GitHub
+          </a>
+
+          <a
+            href={projectl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              text-xs
+              px-3 py-1
+              rounded-full
+              border border-base-300/50
+              text-white/90
+              transition-all
+              hover:bg-secondary
+              hover:text-secondary-content
+            "
+          >
+            View Project
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
 
+
 const Projects = () => {
   return (
     <div className="flex flex-col gap-1 mb-4 ">
-        <h2 className='flex flex-row gap-2 text-base ml-5 mb-2 mt-2 font-bold'><CodeXml /> Projects</h2>
+        <h2 className='flex items-center gap-2 text-base ml-5 mb-2 mt-2 font-bold text-[24px]  bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'><CodeXml /> Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center" >
             <Project 
               title="Java Convolutional Neural Network" 

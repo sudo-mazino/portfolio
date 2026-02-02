@@ -3,14 +3,14 @@ import React from 'react'
 
 export const Skill = ({text}) => {
   return (
-    <div className='badge badge-info rounded-lg mt-1 mb-1 mr-2 text-accent-content font-semibold transition-all duration-300 ease-in-out hover:badge-outline hover:scale-102 hover:-translate-y-[2px] '>{text}</div>
+    <div className='badge badge-info rounded-lg mt-1 mb-1 mr-2 text-[18px] text-accent-content font-semibold transition-all duration-300 ease-in-out hover:badge-outline hover:scale-102 hover:-translate-y-[2px] '>{text}</div>
   )
 }
 
 const Skills = () => {
   return (
-    <div className='flex flex-col gap-2 mb-4 backdrop:blur-sm rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
-      <h2 className='flex flex-row gap-2 text-base ml-3 font-bold'><Wrench />Skills</h2>
+    <div className='flex flex-col gap-2 mb-4 backdrop-blur-[1px] rounded-lg border-1 border-base-300 p-2 bg-base-100 shadow-sm'>
+      <h2 className='flex items-center gap-2 text-base ml-3 font-bold text-[24px] bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'><Wrench />Skills</h2>
       <div className='flex flex-wrap ml-1.5'>
         <Skill text="JavaScript" />
         <Skill text="React" />

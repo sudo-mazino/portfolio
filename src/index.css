@@ -1,22 +1,29 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-   themes: bumblebee --default, halloween --prefersdark;
+   themes: halloween --prefersdark;
 }
 @plugin "daisyui/theme" {
   name: "halloween";
   prefersdark: true;
-  --color-base-100: oklch(0.2108 0.0044 285.82);
-  --color-base-200: oklch(0.1408 0.0044 285.82);
-  --color-base-300: oklch(0 0.0044 285.82);
+  --color-base-100: oklch(0.2108 0.0044 285.82 / 0.4);
+  --color-base-200: oklch(0.1408 0.0044 285.82 / 0.7);
+  --color-base-300: oklch(0 0.0044 285.82 / 0.6);
   --color-info:oklch(74% 0.16 232.661);
-  --color-neutral: oklch(26% 0.007 34.298);
-}
-@plugin "daisyui/theme" {
-  name: "bumblebee";
-  default:true;
-  --color-primary:blue;
-  --color-neutral: oklch(90% 0 0);
+  --color-neutral: oklch(66% 0.007 34.298/ 0.1);
+  --color-accent: oklch(0 0.0044 285.82 / 0.6);
+  --border: 2px;
+  --depth: 0;
+  --noise: 0;
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 2rem;
 }
 body{
   font-family: 'IBM Plex', monospace;
+}
+@font-face {
+  font-family: 'AnshSignature';
+  src: url('./assets/fonts/AnshSignature.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
