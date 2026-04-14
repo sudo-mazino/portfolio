@@ -100,6 +100,13 @@ const Projects = () => {
         <h2 className='flex items-center gap-2 text-base ml-5 mb-2 mt-2 font-bold text-[24px]  bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'><CodeXml /> Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center" >
             <Project 
+              title="Nebula" 
+              description="A real-time chat and media application built with Next.js." 
+              text={["NextJs","Prisma","Typescript","Clerk","LiveKit"]}
+              github="https://github.com/Ultimecia1463/nebula"
+              projectl="nebula-bice-eight.vercel.app"
+            />
+            <Project 
               title="Java Convolutional Neural Network" 
               description="A CNN built from scratch in Java without any external machine learning libraries. Implements convolution, pooling, and fully connected layers, trained and evaluated on MNIST data." 
               text={["Java", "Custom CNN", "Matrix Math", "MNIST", "OOP"]}
