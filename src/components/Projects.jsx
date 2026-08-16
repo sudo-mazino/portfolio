@@ -5,6 +5,7 @@ import islreact from '../assets/islreact.jpg';
 import jhttp from '../assets/jhttp.png';
 import jcnn from '../assets/jcnn.png';
 import esp from '../assets/esp.png';
+import nebula from '../assets/nebula.png';
 import { CodeXml } from 'lucide-react';
 const Project = ({ title, description, text = [], github, projectl, img }) => {
   return (
@@ -25,7 +26,7 @@ const Project = ({ title, description, text = [], github, projectl, img }) => {
         <img
           src={img}
           alt={title}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover scale-99 transition-transform duration-500 group-hover:scale-103"
         />
       </div>
 
@@ -99,12 +100,13 @@ const Projects = () => {
     <div className="flex flex-col gap-1 mb-4 ">
         <h2 className='flex items-center gap-2 text-base ml-5 mb-2 mt-2 font-bold text-[24px]  bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white'><CodeXml /> Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center" >
-            <Project 
+            <Project                                                                                  s
               title="Nebula" 
               description="A real-time chat and media application built with Next.js." 
               text={["NextJs","Prisma","Typescript","Clerk","LiveKit"]}
               github="https://github.com/Ultimecia1463/nebula"
-              projectl="nebula-bice-eight.vercel.app"
+              projectl="https://nebula-bice-eight.vercel.app"
+              img={nebula}
             />
             <Project 
               title="Java Convolutional Neural Network" 
